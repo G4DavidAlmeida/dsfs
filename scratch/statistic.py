@@ -203,7 +203,6 @@ def variance(xs: List[float]) -> float:
         >>> variance([1, 2, 3, 4, 5])
         2.5
     """
-
     assert len(xs) >= 2, "variance requires at least two elements"
     n = len(xs)
     deviations = de_mean(xs)
@@ -289,8 +288,8 @@ def correlation(xs: List[float], ys: List[float]) -> float:
     The Pearson correlation coefficient is a measure of the linear relationship between two datasets.
     It is calculated as the covariance of the two variables divided by the product of their standard deviations.
     Args:
-        xs (List[float]): A list of floats representing the first dataset.
-        ys (List[float]): A list of floats representing the second dataset.
+        xs: A list of floats representing the first dataset.
+        ys: A list of floats representing the second dataset.
     Returns:
         float: The Pearson correlation coefficient between the two datasets. 
                Returns 0 if either dataset has no variation (i.e., standard deviation is zero).
