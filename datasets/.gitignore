@@ -1,2 +1,3 @@
 spam_data/
-iris.dat
+*.dat
+*.csv
