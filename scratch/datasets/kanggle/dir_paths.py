@@ -19,3 +19,13 @@ class IrisDatasetPaths(BaseDirPaths):
         super().__init__(base_dir)
         self.iris_csv = self._check_file(self.base_dir / 'Iris.csv')
         self.database_sqlite = self._check_file(self.base_dir / 'database.sqlite')
+
+class PredictingHiringDecisionsInRecruitmentDataPaths(BaseDirPaths):
+    def __init__(self, base_dir):
+        super().__init__(base_dir)
+        self.recruitment_data_csv = self._check_file(self.base_dir / 'recruitment_data.csv')
+
+class SocialNetworkAdsPaths(BaseDirPaths):
+    def __init__(self, base_dir):
+        super().__init__(base_dir)
+        self.social_network_ads_csv = self._check_file(self.base_dir / 'Social_Network_Ads.csv')

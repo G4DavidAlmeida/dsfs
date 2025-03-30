@@ -7,6 +7,8 @@ class KanggleDatasetNames(BaseDatasetsNames):
     SALARY_PREDICTION = 'thedevastator/jobs-dataset-from-glassdoor'
     TITANIC_DATASET = 'brendan45774/test-file'
     IRIS_DATASET = 'uciml/iris'
+    PREDICTING_HIRING_DECISIONS_IN_RECRUITMENT_DATA = 'rabieelkharoua/predicting-hiring-decisions-in-recruitment-data'
+    SOCIAL_NETWORK_ADS = 'rakeshrau/social-network-ads'
 
 class KanggleDatasets(BaseDatasets):
     def __init__(self):
@@ -29,3 +31,13 @@ class KanggleDatasets(BaseDatasets):
     def iris_dataset(self):
         return IrisDatasetPaths(self._download(
             KanggleDatasetNames.IRIS_DATASET))
+    
+    @property
+    def predicting_hiring_decisions_in_recruitment_data(self):
+        return PredictingHiringDecisionsInRecruitmentDataPaths(self._download(
+            KanggleDatasetNames.PREDICTING_HIRING_DECISIONS_IN_RECRUITMENT_DATA))
+    
+    @property
+    def social_network_ads(self):
+        return SocialNetworkAdsPaths(self._download(
+            KanggleDatasetNames.SOCIAL_NETWORK_ADS))
