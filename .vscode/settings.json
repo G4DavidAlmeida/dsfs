@@ -4,5 +4,6 @@
     "files.associations": {
         "*.ipynb": "jupyter"
     },
-    "python.envFile": "${workspaceFolder}/.env"
+    "python.envFile": "${workspaceFolder}/.env",
+    "pylint.enabled": false,
 }
